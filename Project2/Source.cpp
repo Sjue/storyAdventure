@@ -52,8 +52,22 @@ int main()
 		typing(begin1);
 		int members;
 		cin >> members;
-		
-
+		string mems = "Great! list the names of your party members\n";
+		typing(mems);
+		char names[10][100];
+		for (int i = 0; i < members; i++)
+		{
+			cin >> names[i];
+		}
+		string name1 = "The party members are ";
+		typing(name1);
+		for (int i = 0; i < members; i++)
+		{
+			cout << names[i] << ", ";
+		}
+		cout << "\n";
+		string name2 = "Are these names correct?\n";
+		typing(name2);
 	}
 	return 0;
 }
